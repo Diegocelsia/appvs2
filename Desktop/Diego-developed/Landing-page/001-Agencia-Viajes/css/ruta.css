@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px 80px 50px 50px;
+  display: flex;
+  object-fit: cover;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2000;
+}
+
+body{
+  background-color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(0deg, #1c0522 0%, #827fd1 100%);
+}
+
+header .logo{
+  width: 6vmax;
+  cursor: pointer;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    background: #ddccdd;
+    color: #110011;
+}
+
+nav ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  border-radius: 20px;
+  color: #110011;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+section::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 10;
+}
+
+
+.animation {
+  height: 100vh;
+  background-image: linear-gradient(to top, #1c0522 0%, #827fd1 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.paper-plane {
+  position: absolute;
+  width: 6.5rem;
+  top: 50%;
+  left: -6.5rem;
+}
+
+@media screen and (max-width: 800px) {
+
+  header h1 {font-size: 3rem; padding: 0 1rem;}
+  
+  footer h1 {font-size: 2rem; padding: 0 1rem;}
+  
+
+}
